@@ -23,7 +23,7 @@ export default NextAuth({
   //},
   callbacks: {
     redirect(url, baseUrl) {
-      return 'https://insta-adion.vercel.app/'
+      return 'https://insta-adion.vercel.app/profile'
     }
   }
 })

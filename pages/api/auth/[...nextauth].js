@@ -21,4 +21,10 @@ export default NextAuth({
   pages: {
     signIn: '/signin',
   },
+  callbacks: {
+    redirect(url, baseUrl) {
+      // Redirect to the home page after signing in
+      return baseUrl
+    },
+  },
 })

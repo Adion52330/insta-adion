@@ -23,8 +23,14 @@ export default NextAuth({
   },
   callbacks: {
     redirect(url, baseUrl) {
+<<<<<<< HEAD
       // Redirect to the home page after signing in
       return baseUrl
     },
   },
+=======
+      return 'https://insta-adion.vercel.app/profile'
+    }
+  }
+>>>>>>> 490ffe2552cc30b9ab7c14ee65fa02ffbd969eb7
 })

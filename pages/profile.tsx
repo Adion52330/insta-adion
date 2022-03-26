@@ -10,9 +10,9 @@ const Profile: NextPage = () => {
   const { data: session } = useSession()
   const [followers, setFollowers] = useState(0)
   useEffect(() => {
-    if (!session) {
-      Router.push('/signin')
-    }
+    //if (!session) {
+      //Router.push('/signin')
+    //}
     const query = `*[_type == "author" && _id == "${
       session?.user?.email?.split('@')[0]
     }"] {
@@ -32,7 +32,7 @@ const Profile: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="mx-5 flex max-w-2xl justify-around py-10 md:mx-auto">
+      <div className="mx-5 flex flex-wrap md:flex-nowrap max-w-2xl justify-around py-10 md:mx-auto">
         <img
           src={session?.user?.image!}
           className="rounded-full border-4 border-red-600 from-red-600 to-lime-500 p-2"

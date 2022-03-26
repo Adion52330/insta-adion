@@ -18,7 +18,7 @@ export default NextAuth({
     // The session cookie will have the same name as the provider
     fromExtension: true,
   },
-  pages: {
-    signIn: '/signin',
-  },
+  //pages: {
+    //signIn: '/signin',
+  //},
 })

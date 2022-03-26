@@ -21,10 +21,4 @@ export default NextAuth({
   pages: {
     signIn: '/signin',
   },
-  callbacks: {
-    redirect({ url, baseUrl }) {
-      return 'https://insta-adion.vercel.app'
-      console.log(baseUrl)
-    },
-  },
 })

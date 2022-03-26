@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    if (!session) {
+    if (!session?.name) {
       router.push('/signin')
     } else {
       router.push('/')

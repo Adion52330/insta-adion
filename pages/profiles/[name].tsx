@@ -1,6 +1,6 @@
 import { useSession } from 'next-auth/react'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
+import Router, { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { client } from '../../client'
 import Header from '../../components/Header'
@@ -49,7 +49,7 @@ const Name = () => {
         console.error('Oh no, the update failed: ', err.message)
       })
     setTimeout(() => {
-      window.location.reload()
+      Router.push('/')
     }, 1000)
   }
 

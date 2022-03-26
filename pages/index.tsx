@@ -50,7 +50,7 @@ const Home: NextPage = () => {
             <Post key={post._id} post={post} />
           ))}
         </div>
-        <div className=" hidden flex-col space-y-3 md:flex">
+        <div className="hidden flex-col space-y-3 md:flex">
           <div
             className="flex cursor-pointer items-center justify-center space-x-3"
             onClick={() => {

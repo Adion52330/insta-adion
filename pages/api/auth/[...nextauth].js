@@ -23,7 +23,7 @@ export default NextAuth({
   },
   callbacks: {
     redirect({ url, baseUrl }) {
-      return 'http://localhost:3000'
+      return 'https://insta-adion.vercel.app'
       console.log(baseUrl)
     },
   },

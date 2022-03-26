@@ -61,7 +61,7 @@ const Followers: NextPage = () => {
           <input
             type="number"
             placeholder="How many followers do you need?"
-            className="border-2 border-gray-300 bg-gray-100 p-2 outline-none"
+            className="border-2 border-gray-300 bg-gray-100 p-2 outline-none focus:border-gray-500"
             value={num}
             onChange={(e: any) => setNum(e.target.value)}
           />

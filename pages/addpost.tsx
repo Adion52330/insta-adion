@@ -92,12 +92,19 @@ const AddPost: NextPage = () => {
       <div className="mx-5 mt-24 flex max-w-2xl items-center justify-center rounded-md border-2 border-gray-300 bg-gray-200 p-5 md:mx-auto">
         <form className="flex flex-col items-center justify-center space-y-5">
           {!image ? (
-            <input
-              type="file"
-              placeholder="Image"
-              className="bg-gray-300 p-2 text-lg outline-none"
-              onChange={uploadImage}
-            />
+            <label
+              htmlFor="file"
+              className="relative bg-indigo-600 py-2 px-1 font-semibold text-white"
+            >
+              Click to add an image
+              <input
+                type="file"
+                id="file"
+                placeholder="Image"
+                className="absolute hidden"
+                onChange={uploadImage}
+              />
+            </label>
           ) : (
             <div className="relative h-full">
               <img
@@ -117,7 +124,7 @@ const AddPost: NextPage = () => {
           )}
           <div>
             <textarea
-              className="resize-none border-2 border-gray-300 bg-gray-100 p-2 outline-none"
+              className="resize-none border-2 border-gray-300 bg-gray-100 p-2 outline-none focus:border-gray-500"
               cols={30}
               rows={5}
               placeholder="Write a caption..."

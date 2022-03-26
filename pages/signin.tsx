@@ -8,7 +8,9 @@ const Login: NextPage = () => {
   const { data: session } = useSession()
 
   useEffect(() => {
-    if (session) {
+    if (!session) {
+      Router.push('/signin')
+    } else {
       Router.push('/')
     }
   }, [])

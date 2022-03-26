@@ -19,7 +19,7 @@ export default NextAuth({
     fromExtension: true,
   },
   pages: {
-    signIn: '/signin',
+    signIn: '/',
   },
   callbacks: {
     redirect(url, baseUrl) {

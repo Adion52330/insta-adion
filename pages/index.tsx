@@ -15,6 +15,8 @@ const Home: NextPage = () => {
   useEffect(() => {
     if (!session) {
       router.push('/signin')
+    } else {
+      router.push('/')
     }
   }, [])
 

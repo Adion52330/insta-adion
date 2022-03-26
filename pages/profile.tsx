@@ -10,9 +10,9 @@ const Profile: NextPage = () => {
   const { data: session } = useSession()
   const [followers, setFollowers] = useState(0)
   useEffect(() => {
-    if (!session) {
-      Router.push('/signin')
-    }
+    //if (!session) {
+      //Router.push('/signin')
+    //}
     const query = `*[_type == "author" && _id == "${
       session?.user?.email?.split('@')[0]
     }"] {

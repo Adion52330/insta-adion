@@ -49,3 +49,13 @@
     transform: scale(1);
   }
 }
+
+/* on phone screens  */
+@media (max-width: 575.98px) {
+  .post {
+    width: 100%;
+  }
+  .post-image {
+    object-fit: contain;
+  }
+}

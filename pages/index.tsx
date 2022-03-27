@@ -12,13 +12,13 @@ const Home: NextPage = () => {
   const router = useRouter()
   const [posts, setPosts] = useState([])
 
-  useEffect(() => {
-    if (session) {
-      router.push('/')
-    } else {
-      router.push('/signin')
-    }
-  }, [])
+  //useEffect(() => {
+    //if (session) {
+      //router.push('/')
+    //} else {
+      //router.push('/signin')
+    //}
+  //}, [])
 
   useEffect(() => {
     const query = `*[_type == "post"]{
